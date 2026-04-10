@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/fonts/Inter-VariableFont_opsz,wght.ttf">
+    <link rel="stylesheet" href="src/fonts/Lato-Bold.ttf">
+    <title>Dylan Gamero Portfolio</title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <h4 class="title_links inter_font first_color">Dypok portfolio</h4>
+            <ul class="nav_links">
+                <li><a class="first_color inter_font" href="index.html">Home</a></li>
+                <li><a class="inter_font first_color" href="#About">About me</a></li>
+                <li><a class="inter_font first_color" href="#Proyects">Proyects</a></li>
+                <li><a class="inter_font first_color" href="#Contact">Contact</a></li>
+                <li><a class="inter_font first_color" href="mascotas.html">Pets</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main id="About">
+
+        <section class="first_section">
+            <div class="first_section_f">
+                <h4 class="lato-bold third_color">DE BARRANQUILLA - 2026</h4>
+
+                <h1 class="lato-bold first_color">DYLAN <span class="lato-bold second_color">GAMERO</span></h1>
+                <p class="third_color section_p">Creative Developer & Designer specializing in digital
+                    experiences that
+                    bridge the gap between
+                    technical precision and editorial warmth.</p>
+                <button onclick="Proyects" class="button_1 lato-bold">View Proyects</button>
+            </div>
+            <img class="first_section_img" src="src/imgs/my_photo.webp" alt="foto de dylan gamero">
+        </section>
+
+        <section id="Proyects" class="second_section">
+            <div>
+                <h2 class="second_section_title">About me</h2>
+                <p class="second_section_p third_color">I am a digital curator and multidisciplinary designer based in
+                    Stockholm.
+                    My work focuses on the
+                    intersection of technical precision and human-centric editorial design. I believe that every pixel
+                    should serve a purpose, and every interaction should tell a story without being loud.
+                    <br><br>
+                    With over eight years of experience, I've collaborated with global brands and independent
+                    studios to
+                    craft digital experiences that transcend the typical browser experience, transforming interfaces
+                    into digital galleries.
+                    <br><br>
+                    With over eight years of experience, I've collaborated with global brands and independent studios to
+                    craft digital experiences that transcend the typical browser experience, transforming interfaces
+                    into digital galleries.
+                </p>
+            </div>
+            <img class="second_section_img" src="src/imgs/code.jpg" alt="code image">
+        </section>
+
+        <section id="Proyects">
+            <div class="third_section_title">
+                <p class="third_section_p_t">SELECTED WORKS 2016 - 2026</p>
+                <h2 class="third_section_h2">Curating digital experiences with clinical precision.</h2>
+                <p class="third_section_p">A collection of projects focusing on the intersection of technical excellence
+                    and high-fashion aesthetics.</p>
+            </div>
+
+            <ul class="third_section" style="list-style: none; padding: 0;">
+
+                <li class="card_1">
+                    <div class="img_container">
+                        <img src="src/imgs/proyect_1.png" alt="Proyect 1">
+                    </div>
+                    <div class="card_1_section">
+                        <h2>Eco-Smart Home</h2>
+                        <p>For this project, I transformed the presentation into a web portfolio cover...</p>
+                        <a class="button_2" target="_blank" href="https://github.com/dypokkk">IR AL REPOSITORIO</a>
+                    </div>
+                </li>
+
+                <li class="card_2">
+                    <div class="card_2_section">
+                        <h2>Urban Adventures (Mobile App)</h2>
+                        <p>For this project, I transformed the presentation into a mobile application portfolio cover...
+                        </p>
+                        <a class="button_2" target="_blank" href="https://github.com/dypokkk">IR AL REPOSITORIO</a>
+                    </div>
+                    <div class="img_container">
+                        <img src="src/imgs/proyect_2.png" alt="Proyect 2">
+                    </div>
+                </li>
+
+                <li class="card_3">
+                    <div class="img_container">
+                        <img src="src/imgs/proyect_3.png" alt="Proyect 3">
+                    </div>
+                    <div class="card_3_section">
+                        <h2>Neuro-Link Dashboard</h2>
+                        <p>For this project, I transformed the presentation into a web portfolio cover...</p>
+                        <a class="button_2" target="_blank" href="https://github.com/dypokkk">IR AL REPOSITORIO</a>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+        <section id="contact">
+            <div class="fourth_section">
+                <h2>Contact</h2>
+                <p>
+                    Do you have a proyect in your mind? Write me!
+                </p>
+
+                <form class="fourth_section_form" action="#" method="post">
+
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="name" placeholder="Your name" required />
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@email.com" required />
+                    </div>
+
+                    <div>
+                        <label for="mensaje">Message</label>
+                        <textarea name="message" placeholder="What do you want to tell me?" required></textarea>
+                    </div>
+
+                    <button style="margin-top: 16px;" type="submit" class="button_2">Enviar mensaje</button>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
