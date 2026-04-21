@@ -1,27 +1,68 @@
-/* --- FUENTES Y VARIABLES --- */
-.inter_font {
-    font-family: "Inter", sans-serif;
+/* --- TASK 4: Optimización y Variables Globales --- */
+:root {
+    --primary-color: #27343a;
+    --secondary-color: #a8b3bb;
+    --third-color: #546168;
+    --accent-color: #585b6c;
+    --white: #ffffff;
+    --bg-light: #f9f9f9;
+    --main-font: "Lato", sans-serif;
+    --title-font: "Inter", sans-serif;
 }
 
-.lato-bold {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
+/* --- TASK 3: Reset e Imágenes Responsivas --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.first_color { color: #27343a; }
-.second_color { color: #a8b3bb; }
-.third_color { color: #546168; }
+html {
+    font-size: 16px;
+    /* Base para rem */
+    scroll-behavior: smooth;
+}
 
-/* --- GENERALES --- */
+body {
+    font-family: var(--main-font);
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    /* Asegura que no se desborden */
+    height: auto;
+    display: block;
+}
+
 a {
     text-decoration: none;
 }
 
-h4 {
-    margin: 0;
+/* --- Estilos Agrupados --- */
+.inter_font {
+    font-family: var(--title-font);
 }
 
-/* --- TASK 2: HEADER CON FLEXBOX --- */
+.lato-bold {
+    font-family: var(--main-font);
+    font-weight: 700;
+}
+
+.first_color {
+    color: var(--primary-color);
+}
+
+.second_color {
+    color: var(--secondary-color);
+}
+
+.third_color {
+    color: var(--third-color);
+}
+
+/* --- HEADER (FLEXBOX) --- */
 header {
     position: sticky;
     z-index: 1000;
@@ -29,55 +70,48 @@ header {
 }
 
 nav {
-    display: flex; /* Contenedor flexible */
-    justify-content: space-between; /* Distribución uniforme */
-    align-items: center; /* Centrado vertical */
-    padding: 16px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3.75rem;
     background-color: rgba(255, 255, 255, 0.5);
-    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav_links {
     list-style: none;
-    display: flex; /* Links en fila */
-    gap: 24px;
-    align-items: center;
-    margin: 0;
-}
-
-.title_links {
-    gap: 12px;
     display: flex;
+    gap: 1.5rem;
     align-items: center;
 }
 
-/* --- SECCIÓN HERO (FLEXBOX) --- */
+/* --- SECCIÓN HERO --- */
 .first_section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 86px;
-    padding: 0 60px;
+    margin-top: 5.375rem;
+    padding: 0 3.75rem;
 }
 
 .first_section h1 {
-    font-size: 150px;
-    margin: 0;
-    margin-left: -12px;
+    font-size: clamp(4rem, 10vw, 9.375rem);
+    /* Texto responsivo */
+    margin-left: -0.75rem;
+    line-height: 1;
 }
 
 .section_p {
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: 500;
-    font-family: "Lato", sans-serif;
-    max-width: 600px;
+    max-width: 37.5rem;
+    margin: 1.5rem 0;
 }
 
 .first_section_img {
-    width: auto;
-    height: 450px;
+    height: 28.125rem;
     filter: grayscale(100%);
     transition: filter 0.5s ease-in-out;
 }
@@ -87,39 +121,40 @@ nav {
 }
 
 /* --- BOTONES --- */
-.button_1 {
-    background-color: #585b6c;
+.button_1,
+.button_2 {
+    background-color: var(--accent-color);
     border: none;
-    color: #fff;
-    padding: 16px 32px;
-    font-size: 16px;
+    color: var(--white);
+    padding: 1rem 2rem;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.button_1:hover,
+.button_2:hover {
+    background-color: var(--primary-color);
 }
 
 .button_2 {
-    background-color: #585b6c;
-    border: none;
-    color: #fff;
-    padding: 12px 24px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 8px;
-    font-family: "Lato", sans-serif;
-    align-self: flex-start; /* Evita que el botón ocupe todo el ancho */
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    align-self: flex-start;
 }
 
-/* --- SEGUNDA SECCIÓN (ABOUT) --- */
+/* --- SECCIÓN ABOUT --- */
 .second_section {
     display: flex;
     align-items: center;
-    margin-top: 80px;
-    padding: 0 60px;
+    margin-top: 5rem;
+    padding: 0 3.75rem;
+    gap: 2rem;
 }
 
 .second_section_img {
-    width: auto;
-    height: 350px;
+    height: 21.875rem;
     filter: grayscale(100%);
     transition: filter 0.5s ease-in-out;
 }
@@ -129,53 +164,54 @@ nav {
 }
 
 .second_section_p {
-    font-size: 20px;
-    font-weight: 500;
-    font-family: "Lato", sans-serif;
-    max-width: 600px;
+    font-size: 1.25rem;
+    max-width: 37.5rem;
 }
 
 .second_section_title {
-    color: #27343a;
-    font-family: "Lato", sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-/* --- TASK 3 & 4: GRID LAYOUT PARA PROYECTOS Y MASCOTAS --- */
+/* --- GRID DE PROYECTOS Y MASCOTAS --- */
 .third_section_title {
-    padding: 60px;
+    padding: 3.75rem;
 }
 
 .third_section_h2 {
-    color: #27343a;
-    font-family: "Lato", sans-serif;
-    font-size: 60px; /* Reducido un poco para mejor ajuste */
-    margin: 20px 0;
+    font-size: 3.75rem;
+    margin: 1.25rem 0;
 }
 
-/* Contenedor Grid Principal */
-.projects_grid, .pets_grid {
+.third_section_p_t {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}
+
+.projects_grid,
+.pets_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 30px;
-    padding: 0 60px;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas en escritorio */
+    gap: 1.875rem;
+    padding: 0 3.75rem;
     list-style: none;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 
-/* Estilo de Tarjetas para Grid */
-.projects_grid li, .pets_grid li {
+.projects_grid li,
+.pets_grid li {
     display: flex;
     flex-direction: column;
-    background-color: #f9f9f9;
+    background-color: var(--bg-light);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .img_container {
     width: 100%;
-    height: 250px;
+    height: 15.625rem;
     overflow: hidden;
 }
 
@@ -183,68 +219,115 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(1.1);
-    filter: grayscale(100%);
-    transition: transform 0.8s ease, filter 0.8s ease, object-position 0.8s ease;
     object-position: center;
-    transform: scale(1.05);
+    filter: grayscale(100%);
+    transition: transform 0.8s ease, filter 0.8s ease;
 }
 
 .img_container img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     filter: none;
 }
 
-/* Secciones de texto dentro de las tarjetas */
-.card_1_section, .card_2_section, .card_3_section {
-    padding: 24px;
+.card_1_section {
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.75rem;
     flex-grow: 1;
 }
 
-.card_1_section h2, .card_2_section h2, .card_3_section h2 {
-    margin: 0;
-    font-size: 22px;
-    color: #27343a;
-    font-family: "Lato", sans-serif;
-}
-
-.card_1_section p, .card_2_section p, .card_3_section p {
-    margin: 0;
-    color: #585b6c;
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-    flex-grow: 1; /* Empuja el botón al fondo */
-}
-
-/* --- CONTACTO (FLEXBOX) --- */
+/* --- FORMULARIO DE CONTACTO --- */
 .fourth_section {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding: 80px 0;
+    align-items: center;
+    padding: 5rem 0;
 }
 
 .fourth_section_form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem;
     width: 100%;
-    max-width: 500px;
+    max-width: 31.25rem;
+    padding: 0 1rem;
 }
 
-.fourth_section_form input, .fourth_section_form textarea {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #a8b3bb;
-    font-family: "Lato", sans-serif;
-}
-
+.fourth_section_form input,
 .fourth_section_form textarea {
-    height: 120px;
-    resize: none;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+}
+
+/* --- TASK 2: MEDIA QUERIES (RESPONSIVE) --- */
+
+/* TABLETS (Pantallas medianas) */
+@media (max-width: 1024px) {
+    .projects_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pets_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .first_section h1 {
+        font-size: 6rem;
+    }
+
+    nav,
+    .first_section,
+    .second_section {
+        padding: 0 2rem;
+    }
+}
+
+/* MÓVILES (Pantallas pequeñas) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav_links {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .first_section,
+    .second_section {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .first_section_img,
+    .second_section_img {
+        width: 100%;
+        height: auto;
+        margin: 2rem 0;
+    }
+
+    .projects_grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Proyectos en 1 columna */
+    .pets_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Galería en 2 columnas */
+
+    .section_p,
+    .second_section_p {
+        font-size: 1.1rem;
+    }
+
+    .button_2 {
+        align-self: center;
+    }
 }

@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/normalize.css">
-    <link rel="stylesheet" href="src/fonts/Inter-VariableFont_opsz,wght.ttf">
-    <link rel="stylesheet" href="src/fonts/Lato-Bold.ttf">
-    <title>Dylan Gamero Portfolio</title>
+    <title>Dylan Gamero | Portafolio</title>
 </head>
 
 <body>
     <header>
-
         <nav>
             <h4 class="title_links inter_font first_color">Dypok portfolio</h4>
             <ul class="nav_links">
@@ -23,122 +19,113 @@
                 <li><a class="inter_font first_color" href="#Contact">Contact</a></li>
                 <li><a class="inter_font first_color" href="mascotas.html">Pets</a></li>
             </ul>
-
         </nav>
     </header>
-    <main id="About">
 
+    <main>
         <section class="first_section">
             <div class="first_section_f">
                 <h4 class="lato-bold third_color">DE BARRANQUILLA - 2026</h4>
-
-                <h1 class="lato-bold first_color">DYLAN <span class="lato-bold second_color">GAMERO</span></h1>
-                <p class="third_color section_p">Creative Developer & Designer specializing in digital
-                    experiences that
-                    bridge the gap between
-                    technical precision and editorial warmth.</p>
-                <button onclick="Proyects" class="button_1 lato-bold">View Proyects</button>
+                <h1 class="inter_font first_color">DYLAN <br> GAMERO</h1>
+                <p class="section_p third_color">Full-stack developer focused on creating digital experiences with
+                    precision and design.</p>
+                <button class="button_1 lato-bold"
+                    onclick="alert('¡Gracias por visitar mi portafolio!')">Hablemos</button>
             </div>
-            <img class="first_section_img" src="src/imgs/my_photo.webp" alt="foto de dylan gamero">
+            <div class="first_section_s">
+                <img class="first_section_img" src="src/imgs/my_photo.webp" alt="Dylan Gamero">
+            </div>
         </section>
 
-        <section id="Proyects" class="second_section">
-            <div>
-                <h2 class="second_section_title">About me</h2>
-                <p class="second_section_p third_color">I am a digital curator and multidisciplinary designer based in
-                    Stockholm.
-                    My work focuses on the
-                    intersection of technical precision and human-centric editorial design. I believe that every pixel
-                    should serve a purpose, and every interaction should tell a story without being loud.
-                    <br><br>
-                    With over eight years of experience, I've collaborated with global brands and independent
-                    studios to
-                    craft digital experiences that transcend the typical browser experience, transforming interfaces
-                    into digital galleries.
-                    <br><br>
-                    With over eight years of experience, I've collaborated with global brands and independent studios to
-                    craft digital experiences that transcend the typical browser experience, transforming interfaces
-                    into digital galleries.
-                </p>
+        <section id="About" class="second_section">
+            <div class="second_section_f">
+                <img class="second_section_img" src="src/imgs/code.jpg" alt="Sobre mí">
             </div>
-            <img class="second_section_img" src="src/imgs/code.jpg" alt="code image">
+            <div class="second_section_s">
+                <h2 class="second_section_title">About me</h2>
+                <p id="about-text" class="second_section_p third_color">
+                    I am a digital curator and multidisciplinary designer based in Barranquilla, currently studying at
+                    CUC and Riwi.
+                </p>
+                <button onclick="cambiarDescripcion()" class="button_2">Conocer más</button>
+            </div>
         </section>
 
         <section id="Proyects">
-    <div class="third_section_title">
-        <p class="third_section_p_t">SELECTED WORKS 2016 - 2026</p>
-        <h2 class="third_section_h2">Curating digital experiences.</h2>
-    </div>
+            <div class="third_section_title">
+                <p class="third_section_p_t">SELECTED WORKS 2016 - 2026</p>
+                <h2 class="third_section_h2">Curating digital experiences.</h2>
+            </div>
 
-    <ul class="projects_grid" style="list-style: none; padding: 0;">
-        
-        <li class="card_1">
-            <div class="img_container">
-                <img src="src/imgs/proyect_1.png" alt="Eco-Smart Home">
-            </div>
-            <div class="card_1_section">
-                <h2>Eco-Smart Home</h2>
-                <p>For this project, I transformed the presentation into a web portfolio cover, focusing on a high-fashion, minimalist visual style.</p>
-                <a class="button_2" target="_blank" href="https://github.com/dypokkk">IR AL REPOSITORIO</a>
-            </div>
-        </li>
+            <ul class="projects_grid">
+                <li>
+                    <div class="img_container">
+                        <img src="src/imgs/proyect_1.png" alt="Eco-Smart Home">
+                    </div>
+                    <div class="card_1_section">
+                        <h2>Eco-Smart Home</h2>
+                        <p>Web portfolio cover focusing on a high-fashion, minimalist visual style.</p>
+                        <a class="button_2" target="_blank" href="https://github.com/dypokkk">REPOSITORIO</a>
+                    </div>
+                </li>
 
-        <li class="card_2">
-            <div class="img_container">
-                <img src="src/imgs/proyect_2.png" alt="Aura Sleep Sensor">
-            </div>
-            <div class="card_2_section">
-                <h2>Aura Sleep Sensor</h2>
-                <p>For this project, I transformed the presentation into a web portfolio cover, focusing on a high-fashion, minimalist visual style.</p>
-                <a class="button_2" target="_blank" href="https://github.com/dypokkk">IR AL REPOSITORIO</a>
-            </div>
-        </li>
+                <li>
+                    <div class="img_container">
+                        <img src="src/imgs/proyect_2.png" alt="Aura Sleep Sensor">
+                    </div>
+                    <div class="card_1_section">
+                        <h2>Aura Sleep Sensor</h2>
+                        <p>Mobile application portfolio cover with advanced UI/UX principles.</p>
+                        <a class="button_2" target="_blank" href="https://github.com/dypokkk">REPOSITORIO</a>
+                    </div>
+                </li>
 
-        <li class="card_3">
-            <div class="img_container">
-                <img src="src/imgs/proyect_3.png" alt="Neuro-Link Dashboard">
-            </div>
-            <div class="card_3_section">
-                <h2>Neuro-Link Dashboard</h2>
-                <p>For this project, I transformed the presentation into a web portfolio cover, focusing on a high-fashion, minimalist visual style.</p>
-                <a class="button_2" target="_blank" href="https://github.com/dypokkk">IR AL REPOSITORIO</a>
-            </div>
-        </li>
+                <li>
+                    <div class="img_container">
+                        <img src="src/imgs/proyect_3.png" alt="Neuro-Link Dashboard">
+                    </div>
+                    <div class="card_1_section">
+                        <h2>Neuro-Link Dashboard</h2>
+                        <p>A complex dashboard design for neuro-technological data visualization.</p>
+                        <a class="button_2" target="_blank" href="https://github.com/dypokkk">REPOSITORIO</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-    </ul>
-</section>
-        <section id="contact">
+        <section id="Contact">
             <div class="fourth_section">
                 <h2>Contact</h2>
-                <p>
-                    Do you have a proyect in your mind? Write me!
-                </p>
+                <p>Do you have a project in mind? Write me!</p>
 
                 <form class="fourth_section_form" action="#" method="post">
-
                     <div>
                         <label for="nombre">Nombre</label>
-                        <input type="text" name="name" placeholder="Your name" required />
+                        <input type="text" id="nombre" name="name" placeholder="Your name" required />
                     </div>
-
                     <div>
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="you@email.com" required />
                     </div>
-
                     <div>
                         <label for="mensaje">Message</label>
-                        <textarea name="message" placeholder="What do you want to tell me?" required></textarea>
+                        <textarea id="mensaje" name="message" placeholder="What do you want to tell me?"
+                            required></textarea>
                     </div>
-
-                    <button style="margin-top: 16px;" type="submit" class="button_2">Enviar mensaje</button>
-
+                    <button type="submit" class="button_2" style="margin-top: 16px;">Enviar mensaje</button>
                 </form>
+
+                <div style="margin-top: 30px; text-align: center;">
+                    <button onclick="toggleContacto()" class="button_2">¿Dónde me ubico?</button>
+                    <p id="extra-info" style="display: none; margin-top: 15px; font-family: 'Lato', sans-serif;">
+                        📍 Actualmente en Barranquilla, Colombia 🇨🇴
+                    </p>
+                </div>
             </div>
         </section>
-
     </main>
 
+    <script src="src/scripts/main.js"></script>
 </body>
 
 </html>
