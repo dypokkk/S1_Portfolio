@@ -36,29 +36,28 @@ This portfolio has been built evolutionarily, applying modern web development be
 
 Installation and Usage
 Clone this repository:
-
-```Bash
-git clone [https://github.com/dypokkk/dypok-portfolio.git
+Bash
+git clone [https://github.com/dypokkk/DylanGamero_portfolio.git
 Navigate to the project folder:
 
-cd dypok-portfolio
-Open index.html in your preferred browser.```
+cd DylanGamero_Portfolio
+Open index.html in your preferred browser.
 
-#Workshop Evolution
-##Week 1: Foundations
+##Workshop Evolution
+###Week 1: Foundations
 Basic structure in HTML and initial styling with traditional CSS.
 
-##Week 2: Professional Layouts
+###Week 2: Professional Layouts
 Structural transformation using Flexbox and Grid.
 
 Creation of a responsive mosaic pet gallery.
 
-##Week 3: Interactivity and Adaptability
+###Week 3: Interactivity and Adaptability
 Implementation of Media Queries for mobile support.
 
 Inclusion of JavaScript for dynamism and code optimization using :root variables.
 
-# Author
+##Author
 ###Dylan Gamero
 
 Technical trainee at Riwi (Programming, Soft Skills, and English).
