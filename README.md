@@ -36,12 +36,18 @@ This portfolio has been built evolutionarily, applying modern web development be
 
 Installation and Usage
 Clone this repository:
+```
 Bash
-git clone [https://github.com/dypokkk/DylanGamero_portfolio.git
-Navigate to the project folder:
+git clone https://github.com/dypokkk/DylanGamero_portfolio.git
 
+```
+```
 cd DylanGamero_Portfolio
+
+```
 Open index.html in your preferred browser.
+
+Navigate to the project folder:
 
 ##Workshop Evolution
 ###Week 1: Foundations
