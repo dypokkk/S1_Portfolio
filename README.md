@@ -23,7 +23,6 @@ This portfolio has been built evolutionarily, applying modern web development be
 ## Project Structure
 
 ```
-/
 ├── index.html          # Main portfolio page
 ├── mascotas.html       # Interactive pet gallery
 ├── readme.md           # Readme
@@ -39,11 +38,9 @@ Clone this repository:
 ```
 Bash
 git clone https://github.com/dypokkk/DylanGamero_portfolio.git
-
 ```
 ```
 cd DylanGamero_Portfolio
-
 ```
 Open index.html in your preferred browser.
 
